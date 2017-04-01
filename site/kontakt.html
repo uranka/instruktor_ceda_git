@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset = "utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Kontakt</title>
+	
+	<link href="bs/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="mycss/custom.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+	
+		
+</head>
+<body>
+<div class="container">
+	
+	<!-- ukljucujem header i navigaciju-->
+	include "header.html"
+	
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >					
+				<div class="panel-body">				
+				<address>
+					<strong>Auto škola "Bagljaš"</strong><br>
+					Bul. Veljka Vlahovića 13<br/>
+					23000 Zrenjanin<br/>					
+				</address>
+				<address>
+					<strong>Čedomir Gladić, instruktor - ispitivač</strong><br>
+					<span class="glyphicon glyphicon-phone"></span>&nbsp;063/73-80-100<br/>
+					<span class="glyphicon glyphicon-envelope">&nbsp;<a href="mailto:cgladic1960@gmail.com">cgladic1960@gmail.com</a><br/>					
+				</address>			
+				<a href="https://www.facebook.com/cedomir.gladic"><i class="fa fa-facebook-official" style="font-size:36px;"></i></a>				
+				</div>																
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" >
+			<div id="map" style="width:100%;height:400px;"></div>			
+		</div>																				
+	</div>	
+	
+
+	include "footer.html"
+</div> 
+
+
+<script src="myjs/slide.js"></script>	
+<script src="myjs/map.js"></script>
+<!--  API KEY= AIzaSyAP2GrCnCYn6MH-hrgNOIQfGTsgnSrYXKU NAMENJEN SAMO ZA SAJT instruktorceda pa ne mozes lokalno testiranje
+
+<!-- slobodan API KEY = AIzaSyBzejchL0lY5ba2M_y0Zcz6YO3A6gjQ2XU-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzejchL0lY5ba2M_y0Zcz6YO3A6gjQ2XU&callback=myMap"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/*navigation bar justified*/
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+
+/* za dodavanje praznog mesta po vertikali */
+.gap-30 {
+	width:100%;
+	height:30px;
+}
+
+/*buttoni za navigaciju kod paginacije */
+.btn-pag {
+	background-color: white;
+	color: #337ab7;
+	border: 1px solid white;
+}
+
+.btn-pag-active {
+	background-color: #337ab7; /*#5bc0de; */
+	color: white;
+	border: 1px solid blue;
+}
+

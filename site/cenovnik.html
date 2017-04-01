@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset = "utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Cenovnik</title>
+	
+	<link href="bs/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="mycss/custom.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+		
+</head>
+<body>
+<div class="container">
+	include "header.html"
+	
+	<h1>Cenovnik</h1>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">B kategorija</h2></div>
+					<div class="panel-body" id="div3">
+						<table class="table table-hover table-striped">						
+							<thead>
+								<tr>
+									<th>B kategorija</th><th>minimalan broj časova</th><th>cena</th><th>ukupno</th>
+								</tr>
+							</thead>
+							<tr><td>teorijska obuka</td><td>30+10</td><td>12000 din.</td><td>58480 (40+40) din.</td></tr>
+							<tr><td>teorijska obuka</td><td>5+2</td><td>3500 din.</td><td></td></tr>
+							<tr><td>obuka</td><td>40</td><td>39960 din.</td><td></td></tr>
+							<tr><td>obuka</td><td>35</td><td>34475 din.</td><td>45975 (7+35)</td></tr>
+							<tr><td>obuka</td><td>30</td><td>29550 din.</td><td>41050 (7+30) din.</td></tr>
+							<tr><td>obuka (ako ima vozačku sa B1 kategorijom)</td><td>20</td><td>19700 din.</td><td>27700 din.</td></tr>
+							<tr><td>test</td><td></td><td>4000 din.</td><td></td></tr>		
+							<tr><td>vožnja</td><td></td><td>4000 din.</td><td></td></tr>	
+							<tr><td bgcolor="red" align="center" colspan="4"><i class="fa fa-medkit fa-inverse" style="font-size:36px; aria-hidden="true"></i>
+								<b>&nbsp;&nbsp;Akcija: prva pomoć besplatno ako se plati u gotovini.</b></td></tr>
+						</table>	
+						<div class="panel-footer">
+							<em>Napomena:</em> proveriti telefonom
+						</div>						
+					</div>
+			</div>	
+		</div>		
+	</div>	
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">C kategorija</h2></div>
+					<div class="panel-body" id="div3">
+						<table class="table table-hover table-striped">						
+							<thead>
+								<tr>
+									<th>C kategorija</th><th>minimalan broj časova</th><th>cena</th><th>ukupno</th>
+								</tr>
+							</thead>
+							<tr><td>teorijska obuka</td><td>5+2</td><td>3500 din.</td><td>35000 (7+15) din.</td></tr>
+							<tr><td>obuka</td><td>15</td><td>22500 din.</td><td></td></tr>
+							<tr><td>obuka (ako ima vozačku sa C1 C1E kategorijom)</td><td>7</td><td>10500 din.</td><td>19500 din.</td></tr>
+							<tr><td>test</td><td></td><td>4500 din.</td><td></td></tr>		
+							<tr><td>vožnja</td><td></td><td>4500 din.</td><td></td></tr>							
+						</table>	
+						<div class="panel-footer">
+							<em>Napomena:</em> proveriti telefonom
+						</div>						
+					</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="row">	
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >	
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">CE kategorija</h2></div>
+					<div class="panel-body" id="div3">
+						<table class="table table-hover table-striped">						
+							<thead>
+								<tr>
+									<th>CE kategorija</th><th>minimalan broj časova</th><th>cena</th><th>ukupno</th>
+								</tr>
+							</thead>
+							<tr><td>praktična obuka</td><td>7</td><td>15000 din.</td><td>19500 din.</td></tr>		
+							<tr><td>vožnja</td><td></td><td>4500 din.</td><td></td></tr>							
+						</table>	
+						<div class="panel-footer">
+							<em>Napomena:</em> proveriti telefonom
+						</div>						
+					</div>
+			</div>	
+		</div>
+		
+	</div>	
+
+	
+
+				
+
+	include "footer.html"
+</div>
+<script src="myjs/ceda.js"></script>	
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset = "utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Instruktor Čeda</title>
+	
+	<link href="bs/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="mycss/custom.css" rel="stylesheet">
+	
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+		
+</head>
+<body>
+<div class="container">
+
+	include "header.html"
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Najnovije vesti</h2></div>
+					<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi. Nam risus odio, egestas a massa non, iaculis consectetur elit.
+					Integer luctus dolor in mi hendrerit, quis consectetur erat mattis. Quisque vitae arcu viverra, fringilla
+					ligula ut, consectetur felis
+						<div class="collapse" id ="divc1"><b>This is collapsable part:</b> Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Nam risus odio, egestas a massa non, iaculis consectetur elit.
+							Integer luctus dolor in mi hendrerit.Integer dictum erat sed tincidunt fringilla. Curabitur et odio eget arcu aliquet dignissim
+							in vel risus. Ut maximus bibendum pulvinar. Nulla sollicitudin quis ex at feugiat. Sed rhoncus malesuada justo nec pharetra. Morbi
+							ut aliquam nisi, tempor mollis sem. Donec in aliquam nibh. In ac ligula nec magna facilisis auctor non quis massa. Sed mattis
+							neque nec aliquet pretium. Maecenas in porttitor tellus. Ut vitae lacinia enim. Pellentesque egestas pharetra purus ultricies 
+							condimentum. Curabitur maximus erat eu aliquet viverra. Vestibulum porttitor mauris nec ante consequat mollis. Sed tempus, erat
+							ut faucibus aliquet, massa metus tempor urna, id dignissim magna dolor a nisi.
+						</div>
+					</div>					
+					
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#divc1" id="btn1">više...</button>
+					
+			</div>	
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Vrste obuka</h2></div>
+					<div class="panel-body" id="div2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.
+						<div class="collapse" id ="divc2"><b>This is collapsable part:</b> Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Nam risus odio, egestas a massa non, iaculis consectetur elit.
+							Integer luctus dolor in mi hendrerit.Integer dictum erat sed tincidunt fringilla. Curabitur et odio eget arcu aliquet dignissim
+							in vel risus. Ut maximus bibendum pulvinar. Nulla sollicitudin quis ex at feugiat. Sed rhoncus malesuada justo nec pharetra. Morbi
+							ut aliquam nisi, tempor mollis sem. Donec in aliquam nibh. In ac ligula nec magna facilisis auctor non quis massa. Sed mattis
+							neque nec aliquet pretium. Maecenas in porttitor tellus. Ut vitae lacinia enim. Pellentesque egestas pharetra purus ultricies 
+							condimentum. Curabitur maximus erat eu aliquet viverra. Vestibulum porttitor mauris nec ante consequat mollis. Sed tempus, erat
+							ut faucibus aliquet, massa metus tempor urna, id dignissim magna dolor a nisi.
+						</div>
+					</div>
+				
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#divc2" id="btn2">više...</button>
+				
+			</div>	
+		</div>
+		
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Cenovnik</h2></div>
+					<div class="panel-body" id="div3">
+						<table class="table table-hover table-striped">
+							<thead><td>kategorija</td><td>broj časova</td><td>cena</td></thead>
+							<tr><td>B</td><td>40</td><td>58480 din.</td></tr>
+							<tr><td>C</td><td>15</td><td>35000 din.</td></tr>
+							<tr><td>CE</td><td>10</td><td>19500 din.</td></tr>		
+<tr><td bgcolor="red" align="center" colspan="3"><i class="fa fa-medkit fa-inverse" style="font-size:36px; aria-hidden="true"></i>
+	<b>&nbsp;&nbsp;Akcija: prva pomoć besplatno ako se plati u gotovini.</b></td></tr>							
+						</table>	
+					<div class="panel-footer">
+						<em>Napomena:</em> proveriti telefonom
+					</div>						
+					</div>
+			</div>	
+		</div>
+															
+	</div>		
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Prednosti</h2></div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item" style="border: none"><span class="glyphicon glyphicon-leaf"></span>&nbsp;30 godina iskustva</li>
+							<li class="list-group-item" style="border: none"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Dolazak po kandidata</li>
+							<li class="list-group-item" style="border: none"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Časovi svakim danom u bilo koje vreme</li>
+							<li class="list-group-item" style="border: none"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Povoljne cene</li>
+							<li class="list-group-item" style="border: none"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Plaćanje u ratama</li>
+						</ul>					
+					</div>
+			</div>	
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Nagrade</h2></div>
+					<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere placerat turpis, 
+					eu auctor velit blandit sit amet. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+					sed ante rhoncus sodales sit amet non mi.
+						<div class="collapse" id ="divc3"><b>This is collapsable part:</b> Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Fusce vel diam commodo, fringilla nisl eu, lobortis enim. Proin in mauris
+							sed ante rhoncus sodales sit amet non mi. Nam risus odio, egestas a massa non, iaculis consectetur elit.
+							Integer luctus dolor in mi hendrerit.Integer dictum erat sed tincidunt fringilla. Curabitur et odio eget arcu aliquet dignissim
+							in vel risus. Ut maximus bibendum pulvinar. Nulla sollicitudin quis ex at feugiat. Sed rhoncus malesuada justo nec pharetra. Morbi
+							ut aliquam nisi, tempor mollis sem. Donec in aliquam nibh. In ac ligula nec magna facilisis auctor non quis massa. Sed mattis
+							neque nec aliquet pretium. Maecenas in porttitor tellus. Ut vitae lacinia enim. Pellentesque egestas pharetra purus ultricies 
+							condimentum. Curabitur maximus erat eu aliquet viverra. Vestibulum porttitor mauris nec ante consequat mollis. Sed tempus, erat
+							ut faucibus aliquet, massa metus tempor urna, id dignissim magna dolor a nisi.
+						</div>
+					</div>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#divc3" id="btn3">više...</button>
+			</div>	
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+			<div class="panel panel-info">
+				<div class="panel-heading"><h2 class="panel-title">Kontakt</h2></div>
+					<div class="panel-body">
+						<address>Bul. Veljka Vlahovića br. 13</address>	
+						<span class="glyphicon glyphicon-phone"></span>&nbsp;063/73-80-100
+					</div>
+			</div>	
+		</div>
+															
+	</div>	
+	
+	include "footer.html"
+	
+	
+</div>
+<script src="myjs/ceda.js"></script>	
+</body>
+</html>
