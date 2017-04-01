@@ -1,2 +1,7 @@
 # instruktor_ceda_git
-frontend only web site
+Frontend only web site
+
+### Motivation
+Learning JavaScript and Bootstrap
+
+
