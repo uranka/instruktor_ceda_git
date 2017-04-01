@@ -2,6 +2,8 @@
 Frontend only web site
 
 ### Motivation
-Learning JavaScript and Bootstrap
+* Learning JavaScript and Bootstrap
+
+* Learning Grunt
 
 
