@@ -1,3 +1,6 @@
+// Rad samo sa znakovima opasnosti koji su u folderu images/znakovi/opasnosti
+// Radim po pravilniku o saobracajnoj signalizaciji
+
 // Problem: kada sam npr. na trecoj stranici stranice saobr. znakovi i odem
 // na neku drugu stranicu na sajtu pa uradim back
 // ne ucita trecu stranicu stranice saobr. znakovi nego prvu
@@ -40,28 +43,48 @@
 function placeImages(page) {
 
 var opisiSlika = [
-["krivina nalevo", "približavanje opasnoj krivini na levo zbog fizičkih karakteristika ili nedovoljne preglednosti"],
-["krivina nadesno","približavanje opasnoj krivini na desno zbog fizičkih karakteristika ili nedovoljne preglednosti" ],
-["dvostruka krivina ili više uzastopnih krivina od kojih je prva nalevo", "približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na levo"],
-[" dvostruka krivina ili više uzastopnih krivina od kojih je prva nadesno ","približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na desno"],
+["krivina nalevo i krivina nadesno", "približavanje opasnoj krivini na levo, odnosno na desno zbog fizičkih karakteristika ili nedovoljne preglednosti"],
+["dvostruka krivina ili više uzastopnih krivina od kojih je prva nalevo i dvostruka krivina ili više uzastopnih krivina od kojih je prva nadesno", "približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na levo, odnosno na desno"],
 ["opasna krivina", "više uzastopnih krivina koje su opasne zbog svojih fizičkih karakteristika ili zbog nedovoljne preglednosti"],
-["opasan uspon","približavanje opasnom usponu zbog veličine nagiba i dužine dela puta koji je pod nagibom"],
-["krivina nalevo", "približavanje opasnoj krivini na levo zbog fizičkih karakteristika ili nedovoljne preglednosti"],
-["krivina nadesno","približavanje opasnoj krivini na desno zbog fizičkih karakteristika ili nedovoljne preglednosti" ],
-["dvostruka krivina ili više uzastopnih krivina od kojih je prva nalevo", "približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na levo"],
-[" dvostruka krivina ili više uzastopnih krivina od kojih je prva nadesno ","približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na desno"],
-["opasna krivina", "više uzastopnih krivina koje su opasne zbog svojih fizičkih karakteristika ili zbog nedovoljne preglednosti"],
-["opasan uspon","približavanje opasnom usponu zbog veličine nagiba i dužine dela puta koji je pod nagibom"],
-["krivina nalevo", "približavanje opasnoj krivini na levo zbog fizičkih karakteristika ili nedovoljne preglednosti"],
-["krivina nadesno","približavanje opasnoj krivini na desno zbog fizičkih karakteristika ili nedovoljne preglednosti" ],
-["dvostruka krivina ili više uzastopnih krivina od kojih je prva nalevo", "približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na levo"],
-[" dvostruka krivina ili više uzastopnih krivina od kojih je prva nadesno ","približavanje delu puta sa više uzastopnih krivina zbog fizičkih karakteristika ili nedovoljne preglednosti, od kojih je prva na desno"],
-["opasna krivina", "više uzastopnih krivina koje su opasne zbog svojih fizičkih karakteristika ili zbog nedovoljne preglednosti"]
+["opasan uspon i opasna nizbrdica","približavanje opasnom usponu, odnosno opasnoj nizbrdici zbog veličine nagiba i dužine dela puta koji je pod nagibom"],
+["suženje puta, suženje puta sa desne strane i suženje puta sa leve strane", "približavanje delu puta na kome suženje kolovoza može da predstavlja opasnost"],
+["pokretni most", "blizina mesta na kome se na putu nalazi pokretni most"],
+["blizina obale", "blizina mesta na kome put nailazi na obalu"],
+["neravan kolovoz","blizina dela puta na kome je kolovoz neravan zbog postojanja opasnih izbočina i ulegnuća ili zbog opasne izbočine na kolovozu" ],
+["klizav kolovoz", "blizina dela puta na kome kolovoz pod određenim atmosferskim uslovima ili sličnim okolnostima ima klizavu površinu"],
+["kamenje pršti","blizina dela puta na kome se nalazi nevaljani tucanik ili koji je posut sitnim kamenjem na tvrdoj podlozi i na kome za učesnike u saobraćaju postoji opasnost od prskanja kamena"],
+["odronjavanje kamena", "blizina dela puta na kojem postoji opasnost od odronjavanja kamena sa desne strane puta, odnosno sa leve strane puta"],
+["blizina pešačkog prelaza", "blizina mesta na putu na kome se nalazi obeleženi pešački  prelaz"],
+["deca na putu", "blizina dela puta na kome se deca kreću češće i u većem broju (blizina škole, obdaništa, igrališta"],
+["biciklisti na putu", "blizina mesta na kome se biciklisti često kreću po putu ili ga prelaze"],
+["životinje na putu","blizina dela puta na kome domaće životinje pod nadzorom prelaze preko puta ili se kreću duž puta"],
+["divljač na putu","blizina dela puta koji je opasan zbog prelaska divljači preko puta"],
+["radovi na putu","mesto na kome se izvode radovi na putu"],
+["nailaženje na semafore", "blizina raskrsnice ili obeleženog pešačkog prelaza na kome je saobraćaj regulisan pomoću semafora"],
+["blizina avionske piste", "deo puta preko koga avioni preleću u niskom letu prilikom sletanja odnostno poletanja"],
+["bočni vetar", "blizina dela puta na kome često duva jak bočni vetar"],
+["saobraćaj u oba smera", "označava mesto na kome se prelazi sa dela puta na kome se saobraćaj odvija samo u jednom smeru na deo tog puta na kome se saobraćaj odvija u oba smera"],
+["tunel", "blizina tunela na putu"],
+["opasnost na putu", "blizina dela puta ili mesta na putu na kome učesnicima u saobraćaju preti opasnost za koju nije predviđen poseban znak opasnosti"],
+["ukrštanje puteva iste važnosti", "blizina raskrsnice na kojoj se ukrštaju putevi iste važnosti"],
+["ukrštanje sa sporednim putem pod pravim uglom", ""],
+["ukrštanje trt", "mrt"],
+["raskrsnica sa kružnim tokom saobraćaja", "blizina raskrsnice na kojoj se saobraćaj odvija u kružnom toku"],
+["tramvajska pruga", "blizina mesta na kome put prelazi preko tramvajske pruge u nivou"],
+["prelaz puta preko železničke pruge sa branicima ili polubranicima", "blizina prelaza puta preko železničke pruge u nivou, koji je obezbeđen branicima ili polubranicima"],
+["prelaz puta preko železničke pruge bez branika ili polubranika", "blizina prelaza puta preko železničke pruge u nivou, koji nije obezbeđen branicima ili polubranicima"],
+["Andrejin krst", "gggg"],
+["približavanje prelazu puta preko železničke pruge", ""],
+["približavanje prelazu puta preko železničke pruge", ""],
+["pešaci na putu", "blizina mesta na kome se pešaci često kreću po putu ili ga prelaze"],
+["neučvršćena bankina", "blizina dela puta na kome je uz kolovoz neučvršćena bankina"],
+["kolona zaustavljenih vozila", "blizina dela puta na kome postoji opasnost od stvaranja kolone zaustavljenih vozila"],
+["opasnost od požara", "deo puta koji prolazi kroz područje u kome postoji povećana oapsnost od nastanka požara"]
 ];
 
 	
 var itemsTotal = opisiSlika.length; 
-var itemsOnPage = 3; 
+var itemsOnPage = 7; 
 var displayedPages = Math.ceil(itemsTotal/itemsOnPage); // broj stranica za prikazivanje
 	
 // postavlja znakove za odredjenu stranicu paginacije
@@ -88,7 +111,7 @@ var displayedPages = Math.ceil(itemsTotal/itemsOnPage); // broj stranica za prik
 		divSlike.setAttribute("class", "col-xs-12 col-sm-3 col-md-3 col-lg-3");
 		
 		var imagem = document.createElement("img");
-        imagem.src = "images/znakovi/" + counter + ".png"; 
+        imagem.src = "images/znakovi/opasnosti/" + counter + ".png"; 
 		imagem.setAttribute("class", "img-responsive");  			
 		divSlike.appendChild(imagem);
 		
