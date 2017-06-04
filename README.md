@@ -1,5 +1,5 @@
 # instruktor_ceda_git
-Frontend only web site
+Code for frontend only web site [instruktorceda](http://instruktorceda.000webhostapp.com/)
 
 ### Motivation
 * Learning JavaScript and Bootstrap
